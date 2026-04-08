@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedra, Papel e Tesoura</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+        button { font-size: 18px; margin: 10px; padding: 10px 20px; cursor: pointer; }
+        #resultado { margin-top: 20px; font-weight: bold; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+
+    <h1>Pedra, Papel ou Tesoura</h1>
+    <p>Clique em um botão para jogar:</p>
+
+    <button onclick="jogar('pedra')">Pedra ✊</button>
+    <button onclick="jogar('papel')">Papel ✋</button>
+    <button onclick="jogar('tesoura')">Tesoura ✌️</button>
+
+    <div id="resultado"></div>
+
+    <script>
+        function jogar(escolhaUsuario) {
+            const opcoes = ['pedra', 'papel', 'tesoura'];
+            const escolhaComputador = opcoes[Math.floor(Math.random() * 3)];
+            let mensagem = "";
+
+            if (escolhaUsuario === escolhaComputador) {
+                mensagem = "Empate! Ambos escolheram " + escolhaUsuario;
+            } else if (
+                (escolhaUsuario === 'pedra' && escolhaComputador === 'tesoura') ||
+                (escolhaUsuario === 'papel' && escolhaComputador === 'pedra') ||
+                (escolhaUsuario === 'tesoura' && escolhaComputador === 'papel')
+            ) {
+                mensagem = "Você venceu! " + escolhaUsuario + " ganha de " + escolhaComputador;
+            } else {
+                mensagem = "Você perdeu! " + escolhaComputador + " ganha de " + escolhaUsuario;
+            }
+
+            document.getElementById('resultado').innerText = mensagem;
+        }
+    </script>
+
+</body>
+</html>
