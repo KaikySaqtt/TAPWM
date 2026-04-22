@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Atividade 7</title>
+</head>
+
+<body>
+
+    <h2>Escolha uma função</h2>
+
+    <button onclick="maior()">Maior de 3 números</button><br><br>
+    <button onclick="ordenar()">Ordem crescente</button><br><br>
+    <button onclick="ehPalindromo()">Palíndromo</button><br><br>
+    <button onclick="subconjunto()">Subconjunto</button><br><br>
+    <button onclick="diaSemana()">Dia da semana</button>
+
+    <body>
+        <script>
+            function maior() {
+                const a = Number(prompt("Digite o primeiro número:"));
+                const b = Number(prompt("Digite o segundo número:"));
+                const c = Number(prompt("Digite o terceiro número:"));
+
+                if ([a, b, c].some(v => isNaN(v))) return alert("erro");
+                alert("Maior: " + Math.max(a, b, c));
+            }
+
+            function ordenar() {
+                const a = Number(prompt("Digite o primeiro número:"));
+                const b = Number(prompt("Digite o segundo número:"));
+                const c = Number(prompt("Digite o terceiro número:"));
+
+                if ([a, b, c].some(v => isNaN(v))) return alert("erro");
+                alert("Ordem crescente: " + [a, b, c].sort((x, y) => x - y));
+            }
+
+            function ehPalindromo() {
+                const str = prompt("Digite uma palavra:");
+                if (!str) return alert("erro");
+
+                const limpa = str.toLowerCase().replace(/\s/g, "");
+                const invertida = limpa.split("").reverse().join("");
+
+                alert(limpa === invertida ? "é palíndromo" : "não é palíndromo");
+            }
+
+            function subconjunto() {
+                const p1 = prompt("Digite a primeira palavra:");
+                const p2 = prompt("Digite a segunda palavra:");
+
+                if (!p1 || !p2) return alert("erro");
+                alert(p1.includes(p2) ? "é um subconjunto" : "não é um subconjunto");
+            }
+
+            function diaSemana() {
+                const dataStr = prompt("Digite uma data (YYYY-MM-DD):");
+                if (!dataStr) return alert("erro");
+
+                const data = new Date(dataStr);
+                if (isNaN(data)) return alert("erro");
+
+                const dias = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
+                alert("Dia: " + dias[data.getDay()]);
+            }
+        </script>
+    </body>
+
+</html>
