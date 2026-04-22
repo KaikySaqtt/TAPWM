@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function maior(a, b, c) {
+            if ([a, b, c].some(v => isNaN(v))) return "erro";
+            return Math.max(a, b, c);
+        }
+
+        function ordenar(a, b, c) {
+            if ([a, b, c].some(v => isNaN(v))) return "erro";
+            return [a, b, c].sort((x, y) => x - y);
+        }
+
+        function ehPalindromo(str) {
+            if (!str) return "erro";
+            const limpa = str.toLowerCase().replace(/\s/g, "");
+            const invertida = limpa.split("").reverse().join("");
+            return limpa === invertida ? "é palíndromo" : "não é palíndromo";
+        }
+
+        function subconjunto(p1, p2) {
+            if (!p1 || !p2) return "erro";
+            return p1.includes(p2) ? "é um subconjunto" : "não é um subconjunto";
+        }
+
+        function diaSemana(dataStr) {
+            if (!dataStr) return "erro";
+            const data = new Date(dataStr);
+            if (isNaN(data)) return "erro";
+            const dias = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
+            return dias[data.getDay()];
+        }
+
+        function executar() {
+            alert("Maior: " + maior(
+                Number(prompt("Digite o primeiro número:")),
+                Number(prompt("Digite o segundo número:")),
+                Number(prompt("Digite o terceiro número:"))
+            ));
+
+            alert("Ordem crescente: " + ordenar(
+                Number(prompt("Digite o primeiro número:")),
+                Number(prompt("Digite o segundo número:")),
+                Number(prompt("Digite o terceiro número:"))
+            ));
+
+            alert(ehPalindromo(prompt("Digite uma palavra para verificar palíndromo:")));
+
+            alert(subconjunto(
+                prompt("Digite a primeira palavra:"),
+                prompt("Digite a segunda palavra:")
+            ));
+
+            alert("Dia da semana: " + diaSemana(prompt("Digite uma data (YYYY-MM-DD):")));
+        }
+    </script>
+</body>
+
+</html>
