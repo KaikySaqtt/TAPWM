@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Programação | Semana de Tecnologia</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f4f6f8; color: #1f2937; }
+    .menu { display: flex; justify-content: center; gap: 24px; background-color: #163156; padding: 14px; }
+    .menu a { color: #fff; text-decoration: none; font-weight: 500; }
+    .menu a:hover { color: #90cdf4; }
+    .programacao-container { max-width: 700px; margin: 50px auto; padding: 0 20px; }
+    .programacao-container h1 { color: #1e3a5f; margin-bottom: 24px; }
+    .lista-eventos { list-style: none; }
+    .lista-eventos li { background: #fff; border-radius: 6px; padding: 16px 18px; margin-bottom: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); line-height: 1.5; }
+    .horario { display: block; font-weight: 600; color: #2b6cb0; margin-bottom: 4px; font-size: 0.9rem; }
+    footer { text-align: center; padding: 20px; background-color: #163156; color: #cbd5e0; font-size: 0.9rem; margin-top: 50px; }
+  </style>
+</head>
+<body>
+  <nav class="menu">
+    <a href="/">Início</a>
+    <a href="/sobre">Sobre</a>
+    <a href="/programacao">Programação</a>
+    <a href="/contato">Contato</a>
+    <a href="/admin/inscricao">Inscrição</a>
+  </nav>
+
+  <main class="programacao-container">
+    <h1>Programação</h1>
+    <ul class="lista-eventos">
+      <li><span class="horario">20/10 - 09h00</span>Palestra de abertura: O futuro do desenvolvimento de software</li>
+      <li><span class="horario">20/10 - 14h00</span>Workshop: Introdução a APIs REST com Node.js</li>
+      <li><span class="horario">21/10 - 10h00</span>Palestra: Boas práticas em bancos de dados relacionais</li>
+      <li><span class="horario">22/10 - 13h30</span>Workshop: Construindo interfaces com React</li>
+      <li><span class="horario">23/10 - 09h30</span>Palestra: Segurança da informação no dia a dia do desenvolvedor</li>
+      <li><span class="horario">24/10 - 15h00</span>Painel de encerramento: Carreiras em tecnologia</li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Semana de Tecnologia. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
