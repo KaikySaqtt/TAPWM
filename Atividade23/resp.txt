@@ -1,0 +1,108 @@
+1) 0246810
+
+2) 
+* window
+* document, history, location, navigator
+* html, head, body
+* form
+* Button, input, textarea
+
+3) a, b, c, d, e, f
+
+4) c
+
+5) 24
+
+6) b, c
+
+7) a
+
+8) b
+
+9) c
+
+10) c
+
+11) Express
+
+12) b
+
+13) b
+
+14) c
+
+15) b
+
+16) d
+
+17) Promises
+
+18) c
+
+19) 
+* V
+* V
+* F
+* V
+* V
+* V
+* F
+
+20) 
+a) `http://localhost:3000/quemsomos` e `http://localhost:3000/`
+b) `http://localhost:3000/inexistente`
+
+21) Git
+
+22) 
+* (d) Sistema que gerencia as mudanças no código...
+* (a) Estrutura em que o Git armazena o histórico...
+* (c) Um ponto de salvamento no histórico do projeto...
+* (f) Uma linha de desenvolvimento independente...
+* (e) O processo de unir as alterações feitas...
+* (b) Comando de configuração inicial para definir a identidade...
+
+23) c
+
+24) b
+
+25) c
+
+26) b
+
+27) b
+
+28) b
+
+29) a
+
+30) d
+
+31) b
+
+32) 
+a) Porque o commit foi feito apenas no repositório local e ainda não foi enviado para o repositório remoto.
+b) `git push origin main`
+c) O `git fetch` baixa as alterações do repositório remoto para o local sem aplicá-las automaticamente no branch atual, enquanto o `git pull` baixa e já faz a mesclagem (integração) das alterações no branch atual.
+
+33) c
+
+34) b
+
+35) c
+
+36) b
+
+37) b
+
+38) b
+
+39) b
+
+40) 
+* Permite consultar cliques, impressões, taxa de cliques e posição média de um site nos resultados da Pesquisa Google: Google Search Console
+* Utiliza uma estrutura baseada em eventos, isto é, em interações mensuráveis, como a visualização de uma página ou a realização de uma ação importante: Google Analytics 4 (GA4)
+* Permite verificar a indexação das páginas, identificar dificuldades de rastreamento e enviar páginas para nova análise: Google Search Console
+* Permite identificar por quais canais os visitantes chegaram ao site, como pesquisa orgânica, acesso direto ou redes sociais: Google Analytics 4 (GA4)
+* Ajuda a entender a presença do site na Pesquisa Google antes do acesso, indicando, por exemplo, páginas com muitas impressões e poucos cliques: Google Search Console
+* Ajuda a entender o que ocorre depois que o visitante entra, como a jornada pelas páginas e em quais etapas as pessoas deixam de realizar uma ação esperada: Google Analytics 4 (GA4)
